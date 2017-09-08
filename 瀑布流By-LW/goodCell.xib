@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="goodCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1X9-sz-u30">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="178"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-3M-GXe">
+                        <rect key="frame" x="0.0" y="144" width="138" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79511443660000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="rDS-Z0-2fW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1X9-sz-u30" secondAttribute="trailing" id="D5M-It-Q0H"/>
+                <constraint firstItem="c8S-3M-GXe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="L3V-JO-ev8"/>
+                <constraint firstAttribute="bottom" secondItem="1X9-sz-u30" secondAttribute="bottom" id="QsH-hC-gZf"/>
+                <constraint firstAttribute="trailing" secondItem="c8S-3M-GXe" secondAttribute="trailing" id="UTC-q9-AJf"/>
+                <constraint firstItem="1X9-sz-u30" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hrg-cu-NJq"/>
+                <constraint firstItem="1X9-sz-u30" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="os2-L8-AZb"/>
+                <constraint firstAttribute="bottom" secondItem="c8S-3M-GXe" secondAttribute="bottom" id="u7G-Ai-4P4"/>
+            </constraints>
+            <size key="customSize" width="138" height="178"/>
+            <connections>
+                <outlet property="goodImageView" destination="1X9-sz-u30" id="n8F-di-38R"/>
+                <outlet property="goodLabel" destination="c8S-3M-GXe" id="HIA-UP-hr6"/>
+            </connections>
+            <point key="canvasLocation" x="-178" y="-40"/>
+        </collectionViewCell>
+    </objects>
+</document>
